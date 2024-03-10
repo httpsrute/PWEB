@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Página sobre frameworks">
+    <meta name="keywords" content="Frameworks, HTML, CSS, Javascript">
+    <meta name="author" content="Rute">
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Atividade 3</title>
+</head>
+
+<body>
+    <main id="container">
+        <header>
+            <h1 class="title">Design Responsivo</h1>
+        </header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#conceitos">Conceitos</a></li>
+                <li><a href="#tecnicas">Técnicas</a></li>
+                <li><a href="#frameworks">Frameworks</a></li>
+                <li><a href="#exemplos">Exemplos</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+        </nav>
+
+        <div class="inicio">
+            <section>
+                <div class="inicio-caixa">
+                    <h1 id="introducao">Introdução</h1>
+                    <p>
+                        Em 1977, com o “boom” do computador pessoal Apple II, lançado pela fabricante Apple, muitas pessoas
+                        sonhavam em possuir o novo marco da tecnologia em sua casa. Desde então, os computadores pessoais
+                        dividiram o protagonismo dos eletrônicos mais consumidos com tecnologias mais acessíveis e compactadas,
+                        que vão desde relógios a smartphones.<br>
+                        Com o avanço tecnológico, diferentes modelos de aparelhos para acessarem o mesmo sistema surgiram e, com
+                        eles, diferentes de tamanhos de tela foram criados, obrigando assim a programadores pensarem em maneiras
+                        distintas de tornar a mesma aplicação flexível a todos, assim surgindo o conceito de design responsivo.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="inicio-caixa">
+                    <h1 id="conceitos">Conceitos</h1>
+                    <p>
+                        O Web Design Responsivo (RWD, ou apenas design responsivo), consiste na utilização de técnicas para
+                        estruturar interfaces de sites, com o intuito de tornar o layout flexível e adaptável, harmonizando a
+                        resolução em que o site está sendo visualizado, independente de qual aparelho está sendo usado para
+                        fazê-lo. <br>
+                        O conceito busca, além disso, atender as demandas de projetos de cada usuário, dando acessibilidade a
+                        uma grande variedade de dispositivos, tornado seu acesso ao site uma experiência com boa utilização e
+                        performance. <br>
+                        Seu surgimento ocorreu em 2010, quando um desenvolvedor chamado Ethan Marcotte criou o artigo
+                        “Responsive Web Design” para o blog A List Apart, em que falava das suas preocupações com a experiência
+                        de navegação daqueles que utilizavam aparelhos menores para acessar a web. Na época já era notável o
+                        número de usuários mobile que acessavam o conteúdo online, mostrando assim a necessidade de empresas
+                        garantirem a boa performance para esses aparelhos.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <section>
+            <div class="techniques">
+                <div class="tec">
+                    <h1 id="tecnicas">Técnicas</h1>
+                    <p>Existem diversas técnicas que podem ser usadas parar criar designs responsivos, algumas delas estão descritas abaixo:</p>
+                </div>
+                
+                <div class="grid1">
+                    <div id="media-queries">
+                        <h2 class="title">Media Queries (Pontos de Interupção)</h2>
+                        <p>
+                            São trechos de código CSS que permitem aplicar estilos específicos com base nas características do dispositivo, como largura da tela, altura da tela, orientação e resolução. Isso permite adaptar o layout e os estilos para diferentes dispositivos.
+                        </p>
+                        <img src="images/breakpoints.gif" alt="Comparação de com ou sem media queries" width="300px">
+                    </div>
+
+                    <div id="unidades-relativas">
+                        <h2 class="title">Unidades Relativas</h2>
+                        <p>
+                            São formas de medir elementos em um layout web usando porcentagens, em vez de valores absolutos como pixels. Isso permite que os elementos se ajustem dinamicamente ao tamanho da tela do dispositivo do usuário.
+                        </p>
+                        <img src="images/relativeunits.gif" alt="Comparação de com ou sem unidades relativas" width="300px">
+                    </div>
+
+                    <div id="maxandminvalues">
+                        <h2 class="title">Valores Mínimos e Máximos</h2>
+                        <p>
+                            São limites definidos para o tamanho dos elementos em um layout responsivo. Isso garante que esses elementos não ultrapassem um determinado tamanho, ajudando a manter a consistência e legibilidade em diferentes dispositivos.
+                        </p>
+                        <img src="images/values.gif" alt="Comparação de uso de valores mínimos e máximos" width="300px">
+                    </div>
+                </div>
+                    
+                <div class="grid2">
+                    
+                    <div id="objetosaninhados">
+                        <h2>Objetos Aninhados</h2>
+                        <p>
+                            Refere-se a manter elementos HTML “encapsulados” dentro de outros elementos. Isso ajuda a organizar e controlar o layout de uma página da web, especialmente em designs responsivos.
+                        </p>
+                        <img src="images/nested.gif" alt="Comparação de objetos encapsulados" width="300px">
+                    </div>
+
+                    <div id="mobilefirst">
+                        <h2 class="title">Desktop ou Mobile First?</h2>
+                        <p>
+                            Apesar de tecnicamente não existir diferenças entre iniciar um projeto pela tela maior ou menor, existem algumas vantagens e desvantagens:
+                        </p>
+                        <ul>
+                            <li>Melhor experiência dos usuários mobile;</li>
+                            <li>Maior alcance;</li>
+                            <li>Melhor desempenho nas buscas do Google;</li>
+                            <li>Economia de tempo e recurso.</li>
+                        </ul>
+                        <img src="images/mobilefirst.gif" alt="Comparação de desktop ou mobile first" width="300px">
+                    </div>
+
+                    <div id="fontes">
+                        <h2 class="title">Fontes web ou do Sistema</h2>
+                        <p>
+                            É a escolha entre usar fontes personalizadas carregadas de servidores externos (fontes web) ou fontes pré-instaladas nos dispositivos dos usuários (fontes do sistema). Essa decisão afeta o desempenho e a consistência visual do design.
+                        </p>
+                        <img src="images/fonts.gif" alt="System fonts x Webfonts" width="300px">
+                    </div>
+                </div>
+                <div class="grid3">
+                    <div id="imagens">
+                        <h2 class="title">Imagens Bitmap X Vetores</h2>
+                        <p>
+                            Existem dois tipos de imagens usadas na web: imagens bitmap e imagens vetoriais. As imagens bitmap, como JPG ou PNG, são feitas de pixels e são boas para fotos e detalhes complexos. Já as imagens vetoriais, como SVG, são feitas de instruções matemáticas e são ideais para gráficos simples e ícones, porque podem ser redimensionadas sem perder qualidade.
+                        </p>
+                        <img src="images/vectors-images.gif" alt="Comparação de imagens de vetores e comuns" width="300px">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h1 id="frameworks">Frameworks</h1>
+            <div class="frame">
+                <div id="bootstrap">
+                    <h2 class="title">Bootstrap</h2>
+                    <p>
+                        O Bootstrap é reconhecido como um dos frameworks mais populares para o desenvolvimento responsivo. Desenvolvido pela equipe do Twitter, é amplamente adotado em diversos projetos, como sites, e-commerce e sistemas em geral. Representa uma escolha vantajosa, no entanto, é importante considerar os objetivos de projeto.
+                    </p>
+                </div>
+
+                <div id="wirefy">
+                    <h2 class="title">Wirefy</h2>
+                    <p>
+                        O Wirefy oferece uma abordagem simplificada e possui uma curva de aprendizado acessível, embora seja menos popular. Ele disponibiliza recursos como paginação, formulários e slideshow.
+                    </p>
+                </div>
+
+                <div id="skeleton">
+                    <h2 class="title">Skeleton</h2>
+                    <p>
+                        Por sua vez, o Skeleton se destaca por sua simplicidade e abordagem minimalista, fornecendo apenas os elementos essenciais, como formulários, botões, tipografia e grid. Sua curva de aprendizado é acessível, tornando-o ideal para o desenvolvimento de funcionalidades básicas.
+                    </p>
+                </div>
+
+                <div id="less-framework">
+                    <h2 class="title">Less Framework</h2>
+                    <p>
+                        O Less Framework, por ser mais simples em comparação aos outros, é uma escolha ideal para desenvolvedores que buscam criar designs únicos e responsivos. Focado apenas no grid responsivo, é uma opção leve e fácil de usar.
+                    </p>
+                </div>
+
+                <div id="foundation">
+                    <h2 class="title">Foundation</h2>
+                    <p>
+                        O Foundation é considerado um dos frameworks mais avançados do mercado, permitindo o desenvolvimento de sites com uma abordagem "mobile first", que podem ser adaptados para telas maiores. Sua capacidade de prototipagem rápida e versatilidade o tornam uma escolha popular entre os desenvolvedores.
+                    </p>
+                </div>
+            </div>           
+        </section>
+
+        <section>
+            <h1 id="exemplos"><marquee>Exemplos</marquee></h1>
+            <div class="examples">
+                <div class="responsivos">
+                    <h2 class="title">Responsivos</h2>
+                    <h3 class="subtitle">The New York Times</h3>
+                    <img src="images/the-new-york-times.png" alt="Comparação de responsividade do jornal The New York Times">
+
+                    <h3 class="subtitle">Esauce</h3>
+                    <img src="images/esauce-responsive.png" alt="Responsividade do site Esauce">
+
+                    <h3 class="subtitle">Friends of the Web</h3>
+                    <img src="images/friends-of-the-web-pc.webp" alt="Responsividade do site Friends of the Web">
+
+                    <img src="images/friends-of-the-web-phone.webp" alt="Responsividade do site Friends of the Web">
+                </div>
+
+                <div class="nao-responsivos">
+                    
+                    <h2 class="title">Não responsivos</h2>
+                    <p>
+                        Os sites abaixo, apesar de se adaptarem (em sua maioria) aos dispositivos mobiles, não são responsivos, são web apps, ou seja, ao entrar com um dispositivo mobile, o usuário é redirecionado para a aplicação feita para aquele tipo de aparelho.
+                    </p>
+                    <h3 class="subtitle">Esauce</h3>
+                    <img src="images/esauce.png" alt="Não responsividade do site Esauce">
+
+                    <h3 class="subtitle">YouTube</h3>
+                    <img src="images/youtube.png" alt="Não responsividade do site Youtube">
+
+                    <h3 class="subtitle">Americanas</h3>
+                    <img src="images/americanas-pc.png" alt="Não responsividade do e-commerce Americanas">
+
+                    <img src="images/americanas-phone.png" alt="Não responsividade do e-commerce Americanas">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="conclusion">
+                <h1 id="conclusao">Conclusão</h1>
+                <p>
+                    As técnicas mencionadas são apenas algumas das muitas ferramentas disponíveis para criar designs responsivos. No entanto, o verdadeiro objetivo por trás de um design responsivo vai além das técnicas utilizadas. Trata-se de proporcionar uma experiência de usuário consistente e acessível, independentemente do dispositivo ou tamanho da tela.
+                    O design responsivo não é apenas uma tendência iniciada em 2010, mas sim uma necessidade no cenário atual, onde os usuários acessam conteúdo de uma ampla variedade de dispositivos. Portanto, ao criar um design responsivo, é essencial pensar não apenas nas técnicas, mas também nos princípios fundamentais de usabilidade e acessibilidade para garantir uma experiência de alta qualidade para todos os usuários.
+                </p>
+            </div>
+        </section>
+        
+        <section>
+            <div class="references">
+                <h1 id="referencias">Referências</h1>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>9 princípios básicos do web design responsivo.</strong> Disponível em: &lt;https://rockcontent.com/br/blog/web-design-responsivo/&gt;. Acesso em: 2 mar. 2024.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <strong>21 Exemplos de sites responsivos - Finalizart.</strong> Disponível em: &lt;https://finalizart.com/desenvolvimento-web/21-exemplos-de-sites-responsivos/&gt;. Acesso em: 2 mar. 2024.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                        <strong>Configurando o viewport no HTML.</strong> Disponível em: &lt;https://www.designresponsivo.com.br/configurando-o-viewport-no-HTML/&gt;. Acesso em: 2 mar. 2024.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <strong>Design responsivo: 5 frameworks que facilitarão sua vida.</strong> Disponível em: &lt;https://pt.linkedin.com/pulse/design-responsivo-5-frameworks-que-facilitar%C3%A3o-sua-vida-gustavo-braga?trk=articles_directory&gt;. Acesso em: 3 mar. 2024.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <strong>Design responsivo para a web &ndash; como adaptar um site a celulares e tablets.</strong> Disponível em: &lt;https://www.freecodecamp.org/portuguese/news/design-responsivo-para-a-web-como-adaptar-um-site-a-celulares-e-tablets/#:~:text=A%20tag%20meta%20viewport%20e&gt;. Acesso em: 2 mar. 2024.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <strong>O Guia para Iniciantes em Design Responsivo da Web (Amostras de Código e Exemplos de Layout).</strong> Disponível em: &lt;https://kinsta.com/pt/blog/design-responsivo-web/&gt;. Acesso em: 2 mar. 2024.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            SALLES, F. <strong>Do primeiro computador do mundo até hoje: a história da Informática.</strong> Disponível em: &lt;https://www.buscape.com.br/pc-computador/conteudo/primeiro-computador-historia-da-informatica&gt;. Acesso em: 2 mar. 2024.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                &copy; Rute de Almeida Paula, 2024.
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
