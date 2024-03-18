@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root
+{
+    --primeira: #1d1d1dad;
+    --segunda: #1c2708;
+    --terceira: #293610;
+    --quarta: #374418;
+    --quinta: #445320;
+    --branco: #fff;
+}
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#nav-list
+{
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+
+#nav-list a
+{
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+section
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 20%);
+    
+}
+
+article
+{
+    width: 100%;
+}
+
+aside
+{
+    width: 20%;
+    margin-left: 10px;
+}
+
+#first-img, #nth-img, #corinthians, #paint
+{
+    float: right;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+#first-block, #first-nth-block
+{
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+#container-1 p, #container-2 p, #container-3 p
+{
+    color: #1d1d1dad;
+    padding-right: 15px;
+}
+
+#secondary-sports div > p
+{
+    padding: 0;
+}
+
+#first-block > p:last-of-type::after,
+#first-nth-block > p:last-of-type::after,
+#nth-block > p:last-of-type::after,
+#nth-nth-block > p:last-of-type::after,
+#biggest-painters > p:last-of-type::after,
+#block > p:last-of-type::after,
+footer > p:last-of-type::before
+{
+    content: '';
+    display: block;
+    border-bottom: 1px solid #DFDFDF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1
+{
+    font-size: 1.375rem;
+    color: #121212;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+h2
+{
+    font-size: 1.125rem;
+    letter-spacing: 0.01em;
+}
+
+#secondary-sports, #nominees, #first-sports, #oscar-content
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DFDFDF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#football, #volleyball, #basketball
+{
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+}
+
+#actresses, #actors
+{
+    width: 50%;
+    padding: 10px;
+    text-align: justify;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+    background-color: #add8e6;
+    padding: 20px;
+}
+
+.card 
+{
+    flex-basis: calc(100% / 3 - 20px);
+    background-color: #87ceeb;
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card h2 
+{
+    margin-top: 0;
+}
+
+.card p 
+{
+    margin-top: 10px;
+}
+
+button
+{
+    background-color: #4169e1;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#container-4
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+    background-color: #add8e6;
+    padding: 20px;
+    text-align: center;
+}
+
+#container-4 a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.card
+{
+    flex-basis: calc(33.33% - 10px);
+    background-color: #87ceeb;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 200px;
+}
+
+.card h2 
+{
+    margin-top: 0;
+}
+
+.card p 
+{
+    margin-top: 10px;
+}
+
+button 
+{
+    background-color: #4169e1;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+footer
+{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.opinion-container
+{
+    border: 1px solid #ddd;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+  
+.opinion-container:last-child
+{
+border-bottom: none;
+}
+
+.opinion-container h3
+{
+text-transform: uppercase;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.opinion-container .opinion-sub-section, .opinion-container .title
+{
+margin-bottom: 5px;
+}
+
+.opinion-container .authors
+{
+    font-weight: bold;
+    color: #999;
+}
+
+.opinion-container .read
+{
+    font-size: 12px;
+    color: #ccc;
+}
+
+.titles
+{
+    font-weight: bold;
+    color: #999;
+}
+
+@media (max-width: 767px)
+{
+    body
+    {
+        padding: 0 20px;
+    }
+
+    header
+    {
+        padding: 10px;
+    }
+
+    main
+    {
+        flex-direction: column;
+    }
+
+    section 
+    {
+        width: 100%;
+    }
+
+    aside
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #navbar 
+    {
+        flex-direction: column;
+    }
+
+    #nav-list 
+    {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #nav-list li 
+    {
+        margin-bottom: 10px;
+    }
+
+    .sections 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .opinion-container 
+    {
+        border: none;
+        padding: 15px 10px;
+    }
+
+    .card 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    img 
+    {
+        width: 100%;
+    }
+
+    #secondary-sports,
+    #nominees,
+    #first-sports,
+    #oscar-content 
+    {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #secondary-sports div,
+    #nominees div,
+    #first-sports div,
+    #oscar-content div 
+    {
+        width: 100%;
+    }
+
+    #secondary-sports p,
+    #nominees p,
+    #first-sports p,
+    #oscar-content p 
+    {
+        text-align: justify;
+    }
+
+    #secondary-sports img,
+    #nominees img,
+    #first-sports img,
+    #oscar-content img 
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    #secondary-sports div img,
+    #nominees div img,
+    #first-sports div img,
+    #oscar-content div img 
+    {
+        float: none;
+    }
+
+    #games 
+    {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #container-4 
+    {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    #container-4 .card 
+    {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    h1
+    {
+        display: block;
+        margin-top: 10px;
+        clear: both;
+    }
+
+    img
+    {
+        display: block;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #first-img
+    {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #duo
+    {
+        display: block;
+        margin-top: 1;
+    }
+
+    #container-2 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container-2 .titles 
+    {
+        margin-bottom: 10px;
+    }
+
+    #container-2 #first-sports 
+    {
+        width: 100%;
+        text-align: justify;
+    }
+
+    #container-2 #secondary-sports
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #container-2 #secondary-sports > div 
+    {
+        flex-basis: 200px; 
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1700px)
+{
+    #container-2 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container-2 .titles 
+    {
+        margin-bottom: 10px;
+    }
+
+    #container-2 #first-sports 
+    {
+        width: 100%;
+        text-align: justify;
+    }
+
+    #container-2 #secondary-sports
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #container-2 #secondary-sports > div 
+    {
+        flex-basis: 200px; 
+        margin-bottom: 20px;
+    }
+
+    #container-2 #secondary-sports img
+    {
+        max-width: 280px;
+    }
+
+    #oscar-content
+    {
+        display: block;
+    }
+
+    #oscar
+    {
+        margin-bottom: 20px;
+        order: 1;
+    }
+}
+
+
+
