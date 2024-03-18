@@ -1,0 +1,139 @@
+@media screen and (max-width: 420px)
+{
+    div
+    {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        background-color: grey;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2::before
+    {
+        content: "Cinza";
+    }
+}
+
+@media screen and (min-width: 421px)
+{
+    div
+    {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        background-color: orange;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2::before
+    {
+        content: "Laranja";
+    }
+}
+
+@media screen and (min-width: 769px)
+{
+    div
+    {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        background-color: #ff00ff;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2::before
+    {
+        content: "Magenta";
+    }
+}
+
+@media screen and (min-width: 1025px)
+{
+    div
+    {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        background-color: #ff6961;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2::before
+    {
+        content: "Vermelho claro";
+    }
+}
+
+@media screen and (min-width: 1081px)
+{
+    div
+    {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        background-color: #9400d3;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2::before
+    {
+        content: "Violeta";
+    }
+}
+
+@media screen and (min-width: 1367px)
+{
+    div
+    {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        background-color: #f5df53;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2::before
+    {
+        content: "Amarelo queimado";
+    }
+}
+
+@media screen and (min-width: 1921px)
+{
+    div
+    {
+        display: flex;  
+        width: 500px;
+        height: 500px;
+        background-color: green;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2::before
+    {
+        content: "Verde";
+    }
+}
